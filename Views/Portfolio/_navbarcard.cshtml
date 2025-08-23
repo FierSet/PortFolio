@@ -1,0 +1,17 @@
+<ul class="navbar-list">
+
+    @foreach (var singlepartial in Model.Partials)
+    {
+        <li class="nav-item">
+            <button class="load-partial nav-link" 
+                @(Model.SelectedPartial == singlepartial ? "disabled" : "")
+                style="@(Model.SelectedPartial == singlepartial ? "color: hsl(190, 82%, 72%);" : "")"
+                data-partial="@singlepartial">
+                    @((!string.IsNullOrEmpty(singlepartial)) ? 
+                    char.ToUpper(singlepartial[0]) + singlepartial.Substring(1) 
+                    : "")
+            </button>
+
+        </li>
+    }
+</ul>

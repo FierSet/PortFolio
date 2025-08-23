@@ -1,0 +1,32 @@
+<div class="sheet-about">
+
+    <div>
+        <h1>About Me</h1>
+        <p>Welcome to my portfolio! I am a passionate developer with a keen interest in creating innovative solutions. My journey in technology has been driven by curiosity and a desire to learn continuously.</p>
+        <p>In this portfolio, you will find a collection of my projects, skills, and experiences that showcase my capabilities and dedication to the craft.</p>
+        <P>@Model.Contacts[0].Description</P>
+    </div>
+    <div class="section-project">
+        <div class="project-zone">
+            @foreach(var project in Model.Proyects)
+            {
+                <div class="project-card">
+
+                    <div class="characteristics">
+
+                        <img class="project-image" src="@project.Img" alt="Projetct @project.Title" class="img-fluid" />
+
+                        <a class="proyect-name" href="@project.Link" target="_blank">@project.Title</a>
+                        
+                        <div class="description">
+                            <p>@project.Description</p>
+                        </div>
+
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>
+    

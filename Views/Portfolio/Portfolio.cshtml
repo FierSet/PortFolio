@@ -4,31 +4,57 @@
 
 <div class="element-center">
 
-
     <div class="main-content">
-        <nav class="navbar-card">
-                <ul>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Portfolio" asp-action="Portfolio">About</a>
-                    </li>
 
-                    <li class="nav-item"></li>
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Portfolio" asp-action="Portfolio">Resume</a>
-                    </li>
-
-                    <li class="nav-item"></li>
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Portfolio" asp-action="Portfolio">Contact</a>
-                    </li>
-
-                </ul>
+        <nav class="navbar-card" id="navbar-card">
+            <partial name="_navbarcard" model=Model />
         </nav>
-        <h2 class="subtitle">Subtitle</h2>
-        <p class="description">This is a description of the portfolio page.</p>
+
+        <div class="info-card" id="partialContainer">
+            <partial name="sheets/@Model.SelectedPartial" model=Model.PortFolioModel/>
+        </div>
+
+        <script>
+            function bindLoadPartialLinks() {
+                document.querySelectorAll(".load-partial").forEach(function(link) {
+                    // Remove previous click handlers if needed (optional)
+                    link.removeEventListener("click", handlePartialClick);
+                    link.addEventListener("click", handlePartialClick);
+                });
+            }
+
+            function handlePartialClick(event) {
+                event.preventDefault();
+
+                const partialName = this.getAttribute("data-partial");
+                // Load partial view
+                fetch(`/Portfolio/ChangePartialView?PartialName=${partialName}`)
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById("partialContainer").innerHTML = html;
+                        bindLoadPartialLinks(); // Rebind after DOM update
+                    }).catch(err => console.error("Error loading partial:", err));;
+                // Load navbar card
+                fetch(`/Portfolio/GetNavbarCard?PartialName=${partialName}`)
+                    .then(response => response.text())
+                    .then(navHtml => {
+                        document.getElementById("navbar-card").innerHTML = navHtml;
+                        bindLoadPartialLinks(); // Rebind again if navbar has links
+                    }).catch(err => console.error("Error loading partial:", err));;
+            }
+            // Initial binding on page load
+            document.addEventListener("DOMContentLoaded", bindLoadPartialLinks);
+        </script>
     </div>
 
     <aside class="user-card">
-        <img src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png" alt="Portfolio Image" class="img-fluid" />
-        <h1 class = "name">name</h1>
+        <div class="avatar-zone">
+            <img class="avatar" src="@Model.PortFolioModel.Contacts[0].Img" alt="Portfolio Image" class="img-fluid" />
+            <div class="name-prof">
+                <p class = "name">@Model.PortFolioModel.Contacts[0].Name</p>
+                <p class="profession">@Model.PortFolioModel.Contacts[0].Profession</p>
+            </div
+        </div>
         <hr/>
     </aside>
     
