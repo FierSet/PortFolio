@@ -60,6 +60,8 @@ CREATE TABLE Projects(
 
 -- Insert initial projects
 INSERT INTO Projects VALUES
+('Inventory Control','Developed an internal inventory management system for TATA company using VBA Excel and SQL Server, improving stock tracking efficiency by 30%','https://i.postimg.cc/fb3rkzkw/image.png','none'),
+('Curriculum Vitae', 'This CV has been built in three versions, showcasing PHP, React.js, and ASP.NET MVC.','https://raw.githubusercontent.com/FierSet/Curriculum-vitae-javascript/a523207b808a81a73b8405fba02c155cbfa438ff/image.png','http://miguelaoz.atwebpages.com/CV-List.php'),
 ('Xor cypher', 'Made in C#, encript the information using the method XOR.', 'https://raw.githubusercontent.com/FierSet/encriptaci-n-xor/d7a71f567908c2fe6c33ae1926d0393c1571ad18/image.png', 'https://github.com/FierSet/encriptaci-n-xor'),
 ('Mobile App', 'Created for Android using Java, it allows for hiring professionals through the app, creating contracts and saving them in a database.', 'https://raw.githubusercontent.com/FierSet/Hire-Now/8eaab7381dc33f46af7224ad01510bf16421bf93/image.png', 'https://github.com/FierSet/Hire-Now'),
 ('E-commerce', 'E-commerce made in React.JS using a SQL Server as database.', 'https://raw.githubusercontent.com/FierSet/Inmobiliarias/fef7de2ea18c2367f949cd6737060a7aac6cae1e/image.png', 'https://github.com/FierSet/Inmobiliarias'),
