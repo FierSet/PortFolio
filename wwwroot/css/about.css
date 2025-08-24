@@ -1,7 +1,12 @@
+:root {
+  --background-card-project: hsl(0, 0%, 15%);
+}
+
 .section-project
 {
     display: flex;
     position: relative;
+    flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -12,11 +17,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
     place-items: center;
-    margin: 10px;
-    padding: 10px;
     width: 100%;
-    /*border: black 1px solid; */
-    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    /*border: black 1px solid; 
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);*/
 }
 
 .project-card
@@ -25,11 +28,20 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 260px;
+    padding: 0%;
     margin: 5px;
+    width: 300px;
     border-radius: 10px;
     /*background-color: white;*/
     box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--background-card-project);
+}
+
+.section-project-title
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .description
@@ -37,18 +49,39 @@
     width: 90%;
 }
 
+.proyect-name-section
+{
+    width: 90%;
+    margin: 5px;
+}
+
 .proyect-name
 {
-    padding: 10px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     color: white;
 }
 
-.proyect-name:hover
+.link-section
 {
-    color: #b6b6b6;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.link
+{
+    text-decoration: none;
+    margin-left: 3px;
+    color: rgb(129, 129, 129);
+}
+
+.link:hover
+{
+    color: #b9b9b9;
 }
 
 .characteristics
@@ -57,7 +90,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1px;
+
 }
 
 .project-image
@@ -65,5 +98,6 @@
     display: flex;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    max-height: 200px;
     width: 100%;
 }

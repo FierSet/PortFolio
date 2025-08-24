@@ -16,14 +16,16 @@
 
         <script>
             function bindLoadPartialLinks() {
-                document.querySelectorAll(".load-partial").forEach(function(link) {
+                document.querySelectorAll(".load-partial").forEach(function(link) 
+                {
                     // Remove previous click handlers if needed (optional)
                     link.removeEventListener("click", handlePartialClick);
                     link.addEventListener("click", handlePartialClick);
                 });
             }
 
-            function handlePartialClick(event) {
+            function handlePartialClick(event) 
+            {
                 event.preventDefault();
 
                 const partialName = this.getAttribute("data-partial");
@@ -45,17 +47,46 @@
             // Initial binding on page load
             document.addEventListener("DOMContentLoaded", bindLoadPartialLinks);
         </script>
+
     </div>
 
-    <aside class="user-card">
+    <div class="user-card">
         <div class="avatar-zone">
             <img class="avatar" src="@Model.PortFolioModel.Contacts[0].Img" alt="Portfolio Image" class="img-fluid" />
             <div class="name-prof">
                 <p class = "name">@Model.PortFolioModel.Contacts[0].Name</p>
                 <p class="profession">@Model.PortFolioModel.Contacts[0].Profession</p>
-            </div
+            </div>
+
+            <div class="contact-zone">
+
+                <div class="infocontact">
+                    <i class="hgi hgi-stroke hgi-mail-01 icon-avatar"></i>
+                    <div class="contact-text">
+                        <p class="label-contact">Email</p>
+                        <a class="label-contact-value" href="mailto:@Model.PortFolioModel.Contacts[0].Email">@Model.PortFolioModel.Contacts[0].Email</a>
+                    </div>
+                </div>
+
+                <div class="infocontact">
+                    <i class="hgi hgi-stroke hgi-location-03 icon-avatar"></i>
+                    <div class="contact-text">
+                        <p class="label-contact">Location</p>
+                        <a class="label-contact-value">Queretaro, QRO. Mexico</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="lick-social">
+                @foreach(var link in Model.PortFolioModel.Links_social)
+                {
+                    <a class="social-link-icon" href="@link.Link" target="_blank"> <i class="@(link.Name != "Main web" ? "fa-brands fa-" + link.Name.ToLower().Replace(" ", "") : "fa-solid fa-globe")"></i> </a>
+                }
+            </div>
+
         </div>
         <hr/>
-    </aside>
+    </div>
     
 </div>

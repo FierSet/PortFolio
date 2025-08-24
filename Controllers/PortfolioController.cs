@@ -1,6 +1,4 @@
 using System.Diagnostics;
-using System.Runtime.ConstrainedExecution;
-using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using PortFolio.Models;
 

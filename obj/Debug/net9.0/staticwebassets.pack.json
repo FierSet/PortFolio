@@ -2,11 +2,15 @@
   "Files": [
     {
       "Id": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\PortFolio.bundle.scp.css",
-      "PackagePath": "staticwebassets\\PortFolio.csj8hs2zc2.bundle.scp.css"
+      "PackagePath": "staticwebassets\\PortFolio.kppxth9pyu.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\css\\home.css",
-      "PackagePath": "staticwebassets\\css\\home.css"
+      "Id": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\css\\about.css",
+      "PackagePath": "staticwebassets\\css\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\css\\resume.css",
+      "PackagePath": "staticwebassets\\css\\resume.css"
     },
     {
       "Id": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\css\\site.css",

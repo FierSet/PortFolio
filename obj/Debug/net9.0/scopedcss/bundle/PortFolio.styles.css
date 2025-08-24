@@ -25,7 +25,7 @@ a[b-vlv47u2cl6] {
 }
 
 .border-top[b-vlv47u2cl6] {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #ffffff;
 }
 .border-bottom[b-vlv47u2cl6] {
   border-bottom: 1px solid #e5e5e5;
@@ -42,6 +42,7 @@ button.accept-policy[b-vlv47u2cl6] {
 
 .footer[b-vlv47u2cl6] {
   position: absolute;
+  color: rgb(175, 175, 175);
   bottom: 0;
   width: 100%;
   white-space: nowrap;

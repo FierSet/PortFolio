@@ -1,0 +1,93 @@
+:root {
+  --color-dot-list: hsl(229, 98%, 25%);
+  --colo-interval-date: hsl(228, 92%, 74%);
+  --color-shadow-dot-list: hsl(0, 0%, 43%);
+  --color-line-list: hsl(0, 0%, 26%);
+  --background-progressbar: hsl(0, 0%, 15%);
+  --color-text-percent:  hsl(0, 0%, 68%);
+  --possition-color: hsl(0, 4%, 70%);
+}
+
+.work-time{ width: 100%; }
+
+.title-work-time{ width: 100%; }
+
+.work-time-list
+{
+    list-style-type: none;
+    padding: 0%;
+}
+
+.work-time-item
+{
+    position: relative;
+    margin: 0;
+    padding-bottom: 1em;
+    padding-left: 20px;
+}
+
+.work-time-item::before /* Dot List*/
+{
+  content: "";
+  position: absolute;
+  background-color: var(--color-dot-list);
+  left: 3px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--color-shadow-dot-list);
+  z-index: 1;
+}
+
+.work-time-item::after  /*:not(:last-child)::before */ 
+{
+  content: '';
+  background-color: var(--color-line-list);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 6px;
+  width: 3px;
+}
+
+.section-skills
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.title-skill{width: 100%;}
+
+.skills
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--background-progressbar);
+}
+
+.skill-name
+{
+    display: flex;
+    align-items: center;
+}
+
+.h5 { padding-right: 5px; }
+
+.progress-section { width: 100%; }
+
+.percent { color: var(--color-text-percent); }
+
+.progressbar 
+{
+    width: 100%;
+}
+
+.possition { color: var(--possition-color); }
+
+.date-interval { color: var(--colo-interval-date); }

@@ -60,7 +60,7 @@ CREATE TABLE Projects(
 
 -- Insert initial projects
 INSERT INTO Projects VALUES
-('xor cypher', 'Made in C#, encript the information using the method XOR.', 'https://raw.githubusercontent.com/FierSet/encriptaci-n-xor/d7a71f567908c2fe6c33ae1926d0393c1571ad18/image.png', 'https://github.com/FierSet/encriptaci-n-xor'),
+('Xor cypher', 'Made in C#, encript the information using the method XOR.', 'https://raw.githubusercontent.com/FierSet/encriptaci-n-xor/d7a71f567908c2fe6c33ae1926d0393c1571ad18/image.png', 'https://github.com/FierSet/encriptaci-n-xor'),
 ('Mobile App', 'Created for Android using Java, it allows for hiring professionals through the app, creating contracts and saving them in a database.', 'https://raw.githubusercontent.com/FierSet/Hire-Now/8eaab7381dc33f46af7224ad01510bf16421bf93/image.png', 'https://github.com/FierSet/Hire-Now'),
 ('E-commerce', 'E-commerce made in React.JS using a SQL Server as database.', 'https://raw.githubusercontent.com/FierSet/Inmobiliarias/fef7de2ea18c2367f949cd6737060a7aac6cae1e/image.png', 'https://github.com/FierSet/Inmobiliarias'),
 ('Cesar cypher','Made in C#, encript the information using the method Cesar, also uses brute force to unencrypted.','https://raw.githubusercontent.com/FierSet/encriptacion_cesar/6bb407126c5f1c8e11c8fab6e890456c4073e995/image.png','https://github.com/FierSet/encriptacion_cesa');

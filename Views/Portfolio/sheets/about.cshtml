@@ -6,7 +6,13 @@
         <p>In this portfolio, you will find a collection of my projects, skills, and experiences that showcase my capabilities and dedication to the craft.</p>
         <P>@Model.Contacts[0].Description</P>
     </div>
+
+    <br/>
+    <br/>
     <div class="section-project">
+        <div class="section-project-title">
+            <h2> <i class="hgi hgi-stroke hgi-sharp hgi-folder-02"></i> My proyects</h2>
+        </div>
         <div class="project-zone">
             @foreach(var project in Model.Proyects)
             {
@@ -16,8 +22,12 @@
 
                         <img class="project-image" src="@project.Img" alt="Projetct @project.Title" class="img-fluid" />
 
-                        <a class="proyect-name" href="@project.Link" target="_blank">@project.Title</a>
-                        
+                        <div class="proyect-name-section">
+                            <a class="proyect-name" href="@project.Link" target="_blank">@project.Title</a>
+                        </div>
+                        <div class="link-section">
+                            <a class="link" href="@project.Link" target="_blank"> <i class="hgi hgi-stroke hgi-github"></i> @project.Link.Trim("https://")</a>
+                        </div>
                         <div class="description">
                             <p>@project.Description</p>
                         </div>
