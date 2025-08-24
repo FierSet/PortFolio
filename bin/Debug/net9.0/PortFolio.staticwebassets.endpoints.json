@@ -19453,6 +19453,304 @@
           "Value": "lib/jquery/dist/jquery.slim.min.js.gz"
         }
       ]
+    },
+    {
+      "Route": "proto-2.gp300seqa4.ico",
+      "AssetFile": "proto-2.ico.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000068775791"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6iqqMUEi7HimH5uU2TDzvAHlYpt0pNIRb8HE9ueFsNU=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Dec 2021 23:06:15 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gp300seqa4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc="
+        },
+        {
+          "Name": "label",
+          "Value": "proto-2.ico"
+        }
+      ]
+    },
+    {
+      "Route": "proto-2.gp300seqa4.ico",
+      "AssetFile": "proto-2.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "201790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Dec 2021 23:06:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gp300seqa4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc="
+        },
+        {
+          "Name": "label",
+          "Value": "proto-2.ico"
+        }
+      ]
+    },
+    {
+      "Route": "proto-2.gp300seqa4.ico.gz",
+      "AssetFile": "proto-2.ico.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6iqqMUEi7HimH5uU2TDzvAHlYpt0pNIRb8HE9ueFsNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Dec 2021 23:06:15 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gp300seqa4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6iqqMUEi7HimH5uU2TDzvAHlYpt0pNIRb8HE9ueFsNU="
+        },
+        {
+          "Name": "label",
+          "Value": "proto-2.ico.gz"
+        }
+      ]
+    },
+    {
+      "Route": "proto-2.ico",
+      "AssetFile": "proto-2.ico.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000068775791"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6iqqMUEi7HimH5uU2TDzvAHlYpt0pNIRb8HE9ueFsNU=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Dec 2021 23:06:15 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc="
+        }
+      ]
+    },
+    {
+      "Route": "proto-2.ico",
+      "AssetFile": "proto-2.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "201790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Dec 2021 23:06:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc="
+        }
+      ]
+    },
+    {
+      "Route": "proto-2.ico.gz",
+      "AssetFile": "proto-2.ico.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6iqqMUEi7HimH5uU2TDzvAHlYpt0pNIRb8HE9ueFsNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Dec 2021 23:06:15 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6iqqMUEi7HimH5uU2TDzvAHlYpt0pNIRb8HE9ueFsNU="
+        }
+      ]
     }
   ]
 }

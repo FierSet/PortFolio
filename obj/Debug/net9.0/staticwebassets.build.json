@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vpQB3FwkmywRY6eHSTfsrvDbnXUhk4JSjCY25L+H2hU=",
+  "Hash": "PuB51oxNMazND1vKjg6xguEJ9yBTSJ6JSsg+3B4Zhyc=",
   "Source": "PortFolio",
   "BasePath": "_content/PortFolio",
   "Mode": "Default",
@@ -267,6 +267,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\87z9jcw2lc-gp300seqa4.gz",
+      "SourceId": "PortFolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/PortFolio",
+      "RelativePath": "proto-2#[.{fingerprint=gp300seqa4}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\proto-2.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "y93y8au96v",
+      "Integrity": "6iqqMUEi7HimH5uU2TDzvAHlYpt0pNIRb8HE9ueFsNU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\proto-2.ico"
     },
     {
       "Identity": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\8fyvk2u27i-pj5nd1wqec.gz",
@@ -2808,6 +2829,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\proto-2.ico",
+      "SourceId": "PortFolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\",
+      "BasePath": "_content/PortFolio",
+      "RelativePath": "proto-2#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gp300seqa4",
+      "Integrity": "PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\proto-2.ico"
     }
   ],
   "Endpoints": [
@@ -22558,6 +22600,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-1C/aT9pZ/9Jk4vdyZYK9wvk43hIlU8FWLfajR0sGqUw="
+        }
+      ]
+    },
+    {
+      "Route": "proto-2.gp300seqa4.ico",
+      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\87z9jcw2lc-gp300seqa4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000068775791"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14539"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6iqqMUEi7HimH5uU2TDzvAHlYpt0pNIRb8HE9ueFsNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Dec 2021 23:06:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gp300seqa4"
+        },
+        {
+          "Name": "label",
+          "Value": "proto-2.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc="
+        }
+      ]
+    },
+    {
+      "Route": "proto-2.gp300seqa4.ico",
+      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\proto-2.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "201790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Dec 2021 23:06:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gp300seqa4"
+        },
+        {
+          "Name": "label",
+          "Value": "proto-2.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc="
+        }
+      ]
+    },
+    {
+      "Route": "proto-2.gp300seqa4.ico.gz",
+      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\87z9jcw2lc-gp300seqa4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6iqqMUEi7HimH5uU2TDzvAHlYpt0pNIRb8HE9ueFsNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Dec 2021 23:06:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gp300seqa4"
+        },
+        {
+          "Name": "label",
+          "Value": "proto-2.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6iqqMUEi7HimH5uU2TDzvAHlYpt0pNIRb8HE9ueFsNU="
+        }
+      ]
+    },
+    {
+      "Route": "proto-2.ico",
+      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\87z9jcw2lc-gp300seqa4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000068775791"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14539"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6iqqMUEi7HimH5uU2TDzvAHlYpt0pNIRb8HE9ueFsNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Dec 2021 23:06:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc="
+        }
+      ]
+    },
+    {
+      "Route": "proto-2.ico",
+      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\proto-2.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "201790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Dec 2021 23:06:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PJ0W+9UV8QaF72p/n2hJq2wxmYmSJ2IgiGxCrH/Qdlc="
+        }
+      ]
+    },
+    {
+      "Route": "proto-2.ico.gz",
+      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\87z9jcw2lc-gp300seqa4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6iqqMUEi7HimH5uU2TDzvAHlYpt0pNIRb8HE9ueFsNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Dec 2021 23:06:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6iqqMUEi7HimH5uU2TDzvAHlYpt0pNIRb8HE9ueFsNU="
         }
       ]
     }

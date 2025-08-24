@@ -265,6 +265,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
+      "Id": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\proto-2.ico",
+      "PackagePath": "staticwebassets\\proto-2.ico"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.PortFolio.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
