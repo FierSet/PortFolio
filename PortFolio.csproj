@@ -9,6 +9,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="9.0.8" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.8" />
+    <None Include=".\database\**" CopyToPublishDirectory="Always" />
+    <None Include="\View\Portfolio\sheets\**" CopyToPublishDirectory="Always" />
   </ItemGroup>
 
 </Project>

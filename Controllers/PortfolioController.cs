@@ -14,7 +14,7 @@ public class PortfolioController : Controller
 
     public IActionResult ChangePartialView(string PartialName)
     {
-        return PartialView($"sheets/{PartialName}", GlobalModel.PortFolioModel);
+        return PartialView($"./sheets/{PartialName}", GlobalModel.PortFolioModel);
     }
 
     public IActionResult GetNavbarCard(string PartialName)
@@ -40,10 +40,10 @@ public class PortfolioController : Controller
 
         PortFolioModel PortFolioinfo = new PortFolioModel();
 
-        string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "views", "Portfolio/sheets");
-        var files = Directory.GetFiles(folderPath)
-                    .Select(Path.GetFileNameWithoutExtension)
-                    .ToList();
+        //string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "./sheets/");
+        //var files = Directory.GetFiles(folderPath).Select(Path.GetFileNameWithoutExtension).ToList();
+
+        var files = new List<string?> { "about","resume"};
 
         var contact = _Transfer.Loaddata("SELECT * FROM Users;");
 

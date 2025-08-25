@@ -1,0 +1,64 @@
+<div class="sheet-resume">
+    <h1>Resume</h1>
+    <p>This is a placeholder for the resume section. Here you can include your professional experience, education, skills, and other relevant information that highlights your qualifications.</p>
+    
+    <div class="work-time">
+        <div class="title-work-time">
+            <h3><i class="hgi hgi-stroke hgi-sharp hgi-work"></i> Experience</h3>
+        </div>
+
+        <ol class="work-time-list">
+            @foreach(var xp in Model.XPS)
+            {
+                <li class="work-time-item">
+                    <h4>@xp.Company</h4>
+                    <p class="possition">@xp.Position</p>
+                    <span class="date-interval">@xp.Duration</span>
+                    <p>@xp.Description</p>
+                </li>
+            }
+        </ol>
+    </div>
+
+    <br/>
+
+    <div class="work-time">
+        <div class="title-work-time">
+            <h3><i class="hgi hgi-stroke hgi-graduation-scroll"></i> education</h3>
+        </div>
+
+        <ol class="work-time-list">
+            @foreach(var xp in Model.Educations)
+            {
+                <li class="work-time-item">
+                    <h4>@xp.Degree</h4>
+                    <p class="possition">@xp.School</p>
+                    <span class="date-interval">@xp.Duration</span>
+                    <p>@xp.Description</p>
+                </li>
+            }
+        </ol>
+    </div>
+
+    <div class="section-skills">
+        <div class="title-skill">
+            <h3><i class="hgi hgi-stroke hgi-knowledge-02"></i> My Skills</h3>
+        </div>
+
+        <div class="skills">
+            @foreach(var skill in Model.Skills)
+            {
+                <div class="skill-name">
+                    <h5 class="h5">@skill.Name</h5>
+                    <data class="percent" value="@skill.Percent">@skill.Percent%</data>
+                </div>
+                <div class="progress-section">
+                    <progress class="progressbar" id="file" value="@skill.Percent" max="100"> @skill.Percent </progress>
+                </div>
+            }
+        </div>
+        
+
+    </div>
+
+</div>
