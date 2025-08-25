@@ -16,6 +16,11 @@ body {
   height: 100%;
 }
 
+main
+{
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -227,7 +232,7 @@ hr{ color: white; }
   color: white;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
   .element-center {
     display: flex;
     margin-inline: auto;
