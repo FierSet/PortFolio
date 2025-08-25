@@ -1,0 +1,39 @@
+# ASP.NET
+# Build and test ASP.NET projects.
+# Add steps that publish symbols, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
+trigger:
+- main
+
+pool:
+  name: Local-pool (On-premise)
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+- task: DotNetCoreCLI@2
+  displayName: 'compiling'
+  inputs:
+    azureSubscription: 'Azure subscription 1(821560ed-3569-4be7-9999-14254a82852a)'
+    command: 'build'
+    projects: '**/*.csproj'
+
+- task: DotNetCoreCLI@2
+  displayName: 'publish'
+  inputs:
+    azureSubscription: 'Azure subscription 1(821560ed-3569-4be7-9999-14254a82852a)'
+    command: 'publish'
+    publishWebProjects: true
+
+- task: AzureRmWebAppDeployment@5
+  displayName: 'deployment'
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1(821560ed-3569-4be7-9999-14254a82852a)'
+    appType: 'webAppLinux'
+    WebAppName: 'Portfolio-Miguelortega'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    DeploymentTypeLinux: 'oneDeploy'
