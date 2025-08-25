@@ -237,13 +237,42 @@ hr{ color: white; }
   color: #b6b6b6;
 }
 
-.footer-text
+html {
+  flex: 1;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.footer-text-custom
 {
   display: flex;
+  position: absolute;
+  bottom: 100;
+  background-color: #272727;
   justify-content: center;
   align-items: center;
-  color: white;
+  width: 100%;
+  border-top: 2px solid;
+  color: rgb(172, 171, 171);
+  border-color: rgb(66, 66, 66);
+  padding: 10px;
 }
+
+.text-footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-footer p
+{
+  margin: 0;
+}
+
 
 @media (max-width: 1100px) {
   .element-center {
@@ -276,15 +305,6 @@ hr{ color: white; }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
