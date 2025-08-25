@@ -156,6 +156,19 @@ main
   justify-content: space-around;
 }
 
+@media (max-width: 600px){
+  .lick-social
+{
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+}
+
 .social-link-icon
 {
   color: white;
@@ -235,12 +248,9 @@ hr{ color: white; }
 @media (max-width: 1100px) {
   .element-center {
     display: flex;
-    margin-inline: auto;
-    justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    max-width: 1200px;
-    gap: 25px;
+    justify-content: center;
+    width: 100%;
     flex-direction: column;
   }
 
@@ -257,6 +267,7 @@ hr{ color: white; }
   .avatar-zone {
     display: flex;
     margin-inline: auto;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
