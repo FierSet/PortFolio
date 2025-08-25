@@ -29,7 +29,7 @@ body {
   justify-content: center;
   align-items: stretch;
   margin-top: 40px;
-  max-width: 1200px;
+  max-width: 100%;
   gap: 25px;
 }
 
@@ -164,27 +164,6 @@ body {
 }
 /* user-car_____________________________________________ */
 
-@media (max-width: 991px) {
-  .element-center {
-    display: flex;
-    margin-inline: auto;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    max-width: 1200px;
-    gap: 25px;
-    flex-direction: column;
-  }
-
-  .avatar-zone {
-    display: flex;
-    margin-inline: auto;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-}
-
 hr{ color: white; }
 
 .main-content 
@@ -246,6 +225,37 @@ hr{ color: white; }
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+@media (max-width: 1050px) {
+  .element-center {
+    display: flex;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    max-width: 1200px;
+    gap: 25px;
+    flex-direction: column;
+  }
+
+  .main-content 
+  {
+    width: 90%;
+  }
+
+  .user-card
+  {
+    width: 90%;
+  }
+
+  .avatar-zone {
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
