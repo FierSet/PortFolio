@@ -40,7 +40,7 @@ public class PortfolioController : Controller
 
         PortFolioModel PortFolioinfo = new PortFolioModel();
 
-        //string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "./sheets/");
+        //string folderPath = Path.Combine(AppContext.BaseDirectory, "sheets");
         //var files = Directory.GetFiles(folderPath).Select(Path.GetFileNameWithoutExtension).ToList();
 
         var files = new List<string?> { "about","resume"};
@@ -55,6 +55,7 @@ public class PortfolioController : Controller
                 Img = contact[0]["Img"].ToString(),
                 Email = contact[0]["Email"].ToString(),
                 Profession = contact[0]["Profession"].ToString(),
+                Location = contact[0]["Location"].ToString(),
                 Description = contact[0]["Description"].ToString()
             }
         };
@@ -88,7 +89,7 @@ public class PortfolioController : Controller
         PortFolioinfo.Skills = skill.Select(e => new Skill
         {
             Name = e["Name"].ToString(),
-            Percent = int.Parse(e["percent"].ToString())
+            Percent = int.TryParse(e?["percent"]?.ToString(), out var result) ? result : 0
 
         }).ToList();
 

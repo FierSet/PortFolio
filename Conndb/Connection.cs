@@ -7,7 +7,7 @@ public class Connection
     {
         var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json").Build();
 
-        SQLSTRING = builder.GetSection("ConnectionString:stringSQL").Value;
+        SQLSTRING = builder.GetSection("ConnectionString:stringSQL").Value ?? "";
         // Console.WriteLine("-----" + SQLSTRING);
     }
 

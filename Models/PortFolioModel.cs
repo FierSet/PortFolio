@@ -18,6 +18,7 @@ public class Contact
     public string? Img { get; set; }
     public string? Email { get; set; }
     public string? Profession { get; set; }
+    public string? Location { get; set; }
     public string? Description { get; set; }
 }
 public class Link_social

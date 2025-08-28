@@ -68,7 +68,7 @@
                     <i class="hgi hgi-stroke hgi-location-03 icon-avatar"></i>
                     <div class="contact-text">
                         <p class="label-contact">Location</p>
-                        <a class="label-contact-value">Queretaro, QRO. Mexico</a>
+                        <a class="label-contact-value">@Model.PortFolioModel.Contacts[0].Location</a>
                     </div>
                 </div>
 
@@ -77,7 +77,9 @@
             <div class="lick-social">
                 @foreach(var link in Model.PortFolioModel.Links_social)
                 {
-                    <a class="social-link-icon" href="@link.Link" target="_blank"> <i class="@(link.Name != "Main web" ? "fa-brands fa-" + link.Name.ToLower().Replace(" ", "") : "fa-solid fa-globe")"></i> </a>
+                    <a class="social-link-icon" href="@link.Link" target="_blank"> 
+                        <i class="@(link.Name != "Main web" ? "fa-brands fa-" + link.Name.ToLower().Replace(" ", "") : "fa-solid fa-globe")"></i> 
+                    </a>
                 }
             </div>
 
