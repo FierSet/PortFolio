@@ -8,6 +8,20 @@
   --possition-color: hsl(0, 4%, 70%);
 }
 
+.sheet-resume
+{
+  /*scale: 1;
+    transition: scale .3s ease-in-out;
+  */
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+
+  @starting-style {
+    /* scale: 0; */
+    opacity: 0;
+  }
+}
+
 .work-time{ width: 100%; }
 
 .title-work-time{ width: 100%; }
