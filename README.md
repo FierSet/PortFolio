@@ -1,4 +1,4 @@
-<img width="292" height="299" alt="image" src="https://github.com/user-attachments/assets/8bc595c0-63fa-42d7-a8f7-cf48a864cf27" />## PortFolio
+# PoitFolio
 Made in ASP.NET MVC C#, also used JavaScript and SQLITE
 In this portfolio, you will find a collection of my projects, skills, and experiences that showcase my capabilities and dedication to the craft.
 
