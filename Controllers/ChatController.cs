@@ -16,8 +16,8 @@ public class ChatController : ControllerBase
 
     public ChatController(IConfiguration config)
     {
-        fileid = "file-JhGiDMbGZekZtBu7T3rT84";
-        _apikeys.Add("https://api.openai.com/v1/chat/completions");
+        fileid = "file-AGAuHkyoHmGsRTeZfqHvKJ"; //pdf //"file-JhGiDMbGZekZtBu7T3rT84"; //txt
+        _apikeys.Add("https://api.openai.com/v1/responses");
         _apikeys.Add("Bearer");
         _apikeys.Add(Environment.GetEnvironmentVariable("OPENAI_API_KEY") ?? "");
     }
@@ -32,18 +32,29 @@ public class ChatController : ControllerBase
 
         var requestBody = new
         {
-            instruction = "A document has been provided with information on Portfolio.",
-            model = "gpt-4.1",
-            tools = new[]
-            { 
-                new { type = "retrieval"}
-            },
-           file_id = new[] { fileid },
-            messages = new[]
+            model = "gpt-5",
+            input = new[]
             {
-                new { role = "user", content = input.Message }
+                new
+                {
+                    role = "user",
+                    content = new object[]
+                    {
+                        new
+                        {
+                            type = "input_file",
+                            file_id = fileid
+                        },
+                        new
+                        {
+                            type= "input_text",
+                            text = input.Message
+                        }
+                    },
+                }
             }
         };
+
 
         var content = new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json");
 
@@ -53,15 +64,26 @@ public class ChatController : ControllerBase
         using var doc = JsonDocument.Parse(json);
 
         string? reply = null;
+        var root = doc.RootElement;
 
-        if (doc.RootElement.TryGetProperty("error", out JsonElement errorElement))
+        if (root.TryGetProperty("error", out JsonElement errorElement) && errorElement.ValueKind != JsonValueKind.Null)
         {
-            string errorMsg = errorElement.GetProperty("message").GetString() ?? "Unknown error";
-            string errorType = errorElement.GetProperty("type").GetString() ?? "Unknown type";
-            reply = $"Error ({errorType}) : {errorMsg}";
+            reply = errorElement.GetProperty("message").GetString() ?? "Unknown error";
         }
-        else if (doc.RootElement.TryGetProperty("choices", out JsonElement choices))
-            reply = choices[0].GetProperty("message").GetProperty("content").GetString();
+        if (root.TryGetProperty("output", out JsonElement outputElement) && outputElement.GetArrayLength() > 0)
+        {
+            foreach (var item in outputElement.EnumerateArray())
+                if (item.GetProperty("type").GetString() == "message" && 
+                    item.TryGetProperty("content", out JsonElement contentArray)) // Only look for assistant messages
+                    foreach (var contents in contentArray.EnumerateArray())
+                    {
+                        if (contents.GetProperty("type").GetString() == "output_text")
+                        {
+                            string text = contents.GetProperty("text").GetString() ?? "";
+                            reply = text;
+                        }
+                    }
+        }
         else
             reply = "Unexpected response format.";
             

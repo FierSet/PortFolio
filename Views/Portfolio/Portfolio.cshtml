@@ -143,11 +143,28 @@
                 <br/>`;
                 input.value = "";
 
+                // Add "typing" animation placeholder
+                const typingMsg = document.createElement("div");
+                typingMsg.className = "item";
+                typingMsg.id = "animation-typing";
+                typingMsg.innerHTML = `
+                    <div class="icon">
+                        <i class="hgi hgi-stroke hgi-chat-gpt"></i>
+                    </div>
+                    <div class="msg typing">
+                        Typing <span class="dots"></span>
+                    </div>
+                `;
+                chat.appendChild(typingMsg);
+                chat.scrollTo({ top: chat.scrollHeight, behavior: "smooth" });
+
                 const response = await fetch("/api/Chat/ask",  {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ message: userMsg })
                 });
+
+                chat.removeChild(typingMsg);
 
                 const data = await response.json();
                 chat.innerHTML += 
