@@ -1,4 +1,7 @@
 using System.Diagnostics;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using PortFolio.Models;
 
@@ -29,6 +32,11 @@ public class PortfolioController : Controller
         return PartialView("_navbarcard", Model);
     }
 
+    public IActionResult Showchatbot()
+    {
+        return PartialView("./chatbot/chatbot");
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
@@ -43,7 +51,7 @@ public class PortfolioController : Controller
         //string folderPath = Path.Combine(AppContext.BaseDirectory, "sheets");
         //var files = Directory.GetFiles(folderPath).Select(Path.GetFileNameWithoutExtension).ToList();
 
-        var files = new List<string?> { "about","resume"};
+        var files = new List<string?> { "about", "resume" };
 
         var contact = _Transfer.Loaddata("SELECT * FROM Users;");
 
@@ -117,10 +125,10 @@ public class PortfolioController : Controller
             Description = e["Description"].ToString(),
             Img = e["Img"].ToString(),
             Link = e["Link"].ToString()
-             
+
         }).ToList();
 
-        Console.Write(PortFolioinfo.Contacts);
+        //Console.Write(PortFolioinfo.Contacts);
 
         FilesAndOtherViewModel Model = new()
         {
@@ -132,6 +140,7 @@ public class PortfolioController : Controller
         return Model;
     }
 }
+
 public class FilesAndOtherViewModel
 {
     public List<string?>? Partials { get; set; }

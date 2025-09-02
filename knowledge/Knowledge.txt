@@ -1,0 +1,70 @@
+Autor Miguel Angel Ortega Zacarias
+Programmer with experience in C#, .NET, and front-end technologies such as JavaScript and CSS. Developed small web applications and automated internal tasks using VBA and PowerShell. Currently deepening expertise in ASP.NET MVC and SQL. Passionate about clean code, software quality, and collaborative development.
+Education
+Instituto tecnológico de Querétaro (ITQ) - QRO, México
+Computer System Eng Degree. | 2017 - 2023.
+
+Colegio de Estudios Tecnológicos de Querétaro (CeCyTeQ) - QRO, México.
+Electronic. | 2013 - 2016.
+
+
+HISTORY WORK:
+TATA (TCS) - QRO, México
+Engineer/ Database Support | 2023 – 2025
+Programmer with passion for creating efficient, scalable applications. Proficient in multiple programming languages and frameworks, with hands-on in developing web apps. Adept at problem-solving and contribute to dynamic dev teams.	
+•	Built and maintained internal web applications using C#, ASP.NET MVC, and SQL Server
+•	Automated internal processes using Excel VBA and PowerShell.
+•	Database support.
+•	Collaborated with international teams to troubleshoot production issues.
+•	Supported deployment of tools to fix large-scale incidents, including system-wide blue screen errors.
+Measurable Achievements
+•	Resolved widespread blue screen issues caused by CrowdStrike, restoring 80% of affected devices.
+•	Created a PowerShell recovery script to resolve blue screen errors in Safe Mode, cutting fix time by 50%.
+•	Automated data entry using Excel VBA connected to SQL Server, reducing manual work by 80%.
+•	Integrated SharePoint search to improve information retrieval, cutting search time by 50%.
+•	Developed PowerShell scripts for device configuration via Azure, boosting IT team productivity by 80%.
+•	Completed 10+ certifications (Cisco, Google, Udemy, and LinkedIn) under 12 months.
+SKILLS
+Soft Skills:
+•	Problem-solving and analytical thinking.
+•	Teamwork and cross-functional collaboration.
+•	Adaptability and continuous learning.
+•	Effective communication.
+•	Time and task management.
+•	Attention to detail.
+•	Self-motivation and initiative.
+Technical: 
+•	**Languages**: C++, JavaScript, Java, VBA, PHP, SQL
+•	 **Frontend**: HTML, CSS, React, XML
+•	**Backend / Database**: ASP.NET MVC, T-SQL, SQL Server
+•	**Cloud Platforms**: Microsoft Azure 
+•	**Tools**: Excel Macros, Git, PowerShell
+•	**Operating Systems**: Windows, Linux
+•	**IOT** : Networking, Arduino, Raspberry pi
+Language: 
+Spanish - Native. 
+English - B1 (actively improving through coursework and practice).
+MY CERTIFICATIONS.
+•	LINUX ESSENTIALS
+•	PROGRAMMING ESSENTIALS IN C
+•	MOBILE APP DEVELOPMENT
+•	INTRODUCTION TO NETWORKS
+•	SWITCHING, ROUTING, AND WIRELESS ESSENTIALS
+•	GOOGLE CLOUD COMPUTING FOUNDATIONS ACADEMY
+•	PERFORM FOUNDATIONAL DATA, ML, AND AI TASKS IN GOOGLE CLOUD (2022)
+•	CREATE AND MANAGE CLOUD RESOURCES (2022)
+•	GOOGLE CLOUD COMPUTING FOUNDATIONS: DATA, ML, AND AI IN GOOGLE CLOUD (2022)
+•	PERFORM FOUNDATIONAL INFRASTRUCTURE TASKS IN GOOGLE CLOUD (2022)
+•	BUILD AND SECURE NETWORKS IN GOOGLE CLOUD (2022)
+•	GOOGLE CLOUD COMPUTING FOUNDATIONS: NETWORKING & SECURITY IN GOOGLE CLOUD (2022)
+•	GOOGLE CLOUD COMPUTING FOUNDATIONS: INFRASTRUCTURE IN GOOGLE CLOUD (2022)
+•	GOOGLE CLOUD COMPUTING FOUNDATIONS: CLOUD COMPUTING FUNDAMENTALS (2022)
+•	GOOGLE CLOUD FUNDAMENTALS FOR AZURE PROFESSIONALS: CORE INFRASTRUCTURE(2022)
+•	GOOGLE CLOUD FUNDAMENTALS FOR AWS PROFESSIONALS (2022)
+•	GOOGLE CLOUD FUNDAMENTALS: CORE INFRASTRUCTURE (2022)
+•	GOOGLE CLOUD BIG DATA AND MACHINE LEARNING FUNDAMENTALS (2022)
+•	GOOGLE CLOUD FUNDAMENTALS: CORE INFRASTRUCTURE (2022)
+•	JAVASCRIPT ALGORITHMS AND DATA STRUCTURES.
+•	FRONT END DEVELOPMENT LIBRARIES
+•	RESPONSIVE WEB DESIGN
+

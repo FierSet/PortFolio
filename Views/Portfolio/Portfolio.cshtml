@@ -31,14 +31,14 @@
                     .then(html => {
                         document.getElementById("partialContainer").innerHTML = html;
                         bindLoadPartialLinks(); // Rebind after DOM update
-                    }).catch(err => console.error("Error loading partial:", err));;
+                    }).catch(err => console.error("Error loading partial:", err));
                 // Load navbar card
                 fetch(`/Portfolio/GetNavbarCard?PartialName=${partialName}`)
                     .then(response => response.text())
                     .then(navHtml => {
                         document.getElementById("navbar-card").innerHTML = navHtml;
                         bindLoadPartialLinks(); // Rebind again if navbar has links
-                    }).catch(err => console.error("Error loading partial:", err));;
+                    }).catch(err => console.error("Error loading partial:", err));
             }
             // Initial binding on page load
             document.addEventListener("DOMContentLoaded", bindLoadPartialLinks);
@@ -85,6 +85,88 @@
 
         </div>
         <hr/>
+    </div>
+
+    <div id="chat-zone" class="chat-bot hide">
+
+        <div class="title-chat">
+            <button id="show-buton" class="show-buton" onclick="hidechat()"> <i class="hgi hgi-stroke hgi-arrow-up-01"></i> </button>
+            <div class="title-bot">ChatBot GPT</div>
+        </div>
+        
+
+        <script>
+
+            function hidechat()
+            {
+                const chatsite = document.getElementById("chat-zone");
+                const buttonchat = document.getElementById("show-buton");
+                const icon = buttonchat.querySelector("i");
+
+                if(chatsite.classList.contains("hide"))
+                {
+                    chatsite.classList.remove("hide");
+                    buttonchat.removeChild(icon);
+                    buttonchat.innerHTML = `<i class="hgi hgi-stroke hgi-arrow-down-01"></i> `;
+
+                    fetch(`/Portfolio/Showchatbot`)
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById("chat-zone").innerHTML += html;
+                    }).catch(err => console.error("Error loading partial:", err));
+                }
+                else
+                {
+                    chatsite.classList.add("hide");
+                    buttonchat.removeChild(icon);
+                    buttonchat.innerHTML = `<i class="hgi hgi-stroke hgi-arrow-up-01"></i>`;
+
+                    const chattext = chatsite.querySelector("#chatting-order");
+                    chattext.classList.add("hide");
+                    chatsite.removeChild(chattext);
+                }
+            }
+
+            async function send() 
+            {
+                const input = document.getElementById("input");
+                const chat = document.getElementById("chat");
+
+                const userMsg = input.value;
+                chat.innerHTML += 
+                `<br/>
+                <div class="item-right">
+                    <div class='msg'>
+                    ${userMsg}
+                    </div>
+                </div>
+                <br/>`;
+                input.value = "";
+
+                const response = await fetch("/api/Chat/ask",  {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ message: userMsg })
+                });
+
+                const data = await response.json();
+                chat.innerHTML += 
+                `<div class="item">
+                    <div class="icon">
+                        <i class="hgi hgi-stroke hgi-chat-gpt"></i>
+                    </div>
+                    <div class="msg">
+                        ${data.response}
+                    </div>
+                </div>`;
+
+                chat.scrollTo({
+                top: chat.scrollHeight,
+                behavior: "smooth"
+                });
+            }
+        </script>
+
     </div>
     
 </div>
