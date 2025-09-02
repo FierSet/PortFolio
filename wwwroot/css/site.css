@@ -331,10 +331,15 @@ body {
 
 .show-buton
 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   border: none;
+  font-weight: bold;
+  padding: 0;
   color: white;
-  font-size: 100%;
+  font-size: 150%;
 }
 
 .title-bot
