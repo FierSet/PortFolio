@@ -37,6 +37,18 @@ public class ChatController : ControllerBase
             {
                 new
                 {
+                    role = "system",
+                    content = new object[]
+                    {
+                        new
+                        {
+                            type = "input_text",
+                            text = "You are an assistant that analyzes and explains the information in the provided portfolio file in a clear and professional way."
+                        }
+                    }
+                },
+                new
+                {
                     role = "user",
                     content = new object[]
                     {
