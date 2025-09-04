@@ -48,7 +48,9 @@
 
     <div class="user-card">
         <div class="avatar-zone">
-            <img class="avatar" src="@Model.PortFolioModel.Contacts[0].Img" alt="Portfolio Image" class="img-fluid" />
+            <div class="imagen-avatar">
+                <img class="avatar" src="@Model.PortFolioModel.Contacts[0].Img" alt="Portfolio Image" class="img-fluid" />
+            </div>
             <div class="name-prof">
                 <p class = "name">@Model.PortFolioModel.Contacts[0].Name</p>
                 <p class="profession">@Model.PortFolioModel.Contacts[0].Profession</p>
@@ -84,7 +86,6 @@
             </div>
 
         </div>
-        <hr/>
     </div>
 
     <div id="chat-zone" class="chat-bot hide">
