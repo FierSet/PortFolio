@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3B5WPKbIvJuSgVmup7RJq0msRejbI0dudPfSTIwFxzk=",
+  "Hash": "SiS27kMOrr4pWk879yZuX5cIMh6oFkACqIirJrRMH8k=",
   "Source": "PortFolio",
   "BasePath": "_content/PortFolio",
   "Mode": "Default",
@@ -248,12 +248,12 @@
       "OriginalItemSpec": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\610pfm39me-1upyygzhnw.gz",
+      "Identity": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\610pfm39me-ft70h06f10.gz",
       "SourceId": "PortFolio",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/PortFolio",
-      "RelativePath": "css/site#[.{fingerprint=1upyygzhnw}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=ft70h06f10}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -262,8 +262,8 @@
       "RelatedAsset": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "h3r1bsod55",
-      "Integrity": "bdoglDsEHJs+OmvoVRYjNIIWJOor/8nvKl3JjkZvs0s=",
+      "Fingerprint": "3t7hp42r3p",
+      "Integrity": "x2oNq9+pBDVPo2KEg8FPAwTBSpIHe1MkrtrmNMfLVnI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\css\\site.css"
@@ -1522,8 +1522,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1upyygzhnw",
-      "Integrity": "ScnClzGulmZxRGJ7w+YG2MQRtQow8DVJ5ZlJiMLJDGg=",
+      "Fingerprint": "ft70h06f10",
+      "Integrity": "bQfrYBda4NiEKcuqMfcL6dkguByh8lwTAxV+2EkBPrM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -3450,13 +3450,13 @@
       ]
     },
     {
-      "Route": "css/site.1upyygzhnw.css",
-      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\610pfm39me-1upyygzhnw.gz",
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\610pfm39me-ft70h06f10.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000461680517"
+          "Quality": "0.000461254613"
         }
       ],
       "ResponseHeaders": [
@@ -3466,19 +3466,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2165"
+          "Value": "2167"
         },
         {
           "Name": "ETag",
-          "Value": "\"bdoglDsEHJs+OmvoVRYjNIIWJOor/8nvKl3JjkZvs0s=\""
+          "Value": "\"x2oNq9+pBDVPo2KEg8FPAwTBSpIHe1MkrtrmNMfLVnI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 04 Sep 2025 02:40:32 GMT"
+          "Value": "Thu, 04 Sep 2025 03:05:07 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -3494,26 +3494,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ScnClzGulmZxRGJ7w+YG2MQRtQow8DVJ5ZlJiMLJDGg=\""
+          "Value": "W/\"bQfrYBda4NiEKcuqMfcL6dkguByh8lwTAxV+2EkBPrM=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "1upyygzhnw"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-ScnClzGulmZxRGJ7w+YG2MQRtQow8DVJ5ZlJiMLJDGg="
+          "Value": "sha256-bQfrYBda4NiEKcuqMfcL6dkguByh8lwTAxV+2EkBPrM="
         }
       ]
     },
     {
-      "Route": "css/site.1upyygzhnw.css",
+      "Route": "css/site.css",
       "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3523,7 +3515,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9203"
+          "Value": "9213"
         },
         {
           "Name": "Content-Type",
@@ -3531,11 +3523,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ScnClzGulmZxRGJ7w+YG2MQRtQow8DVJ5ZlJiMLJDGg=\""
+          "Value": "\"bQfrYBda4NiEKcuqMfcL6dkguByh8lwTAxV+2EkBPrM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 04 Sep 2025 02:40:32 GMT"
+          "Value": "Thu, 04 Sep 2025 03:05:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bQfrYBda4NiEKcuqMfcL6dkguByh8lwTAxV+2EkBPrM="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\610pfm39me-ft70h06f10.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2167"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x2oNq9+pBDVPo2KEg8FPAwTBSpIHe1MkrtrmNMfLVnI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 04 Sep 2025 03:05:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x2oNq9+pBDVPo2KEg8FPAwTBSpIHe1MkrtrmNMfLVnI="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.ft70h06f10.css",
+      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\610pfm39me-ft70h06f10.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000461254613"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2167"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x2oNq9+pBDVPo2KEg8FPAwTBSpIHe1MkrtrmNMfLVnI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 04 Sep 2025 03:05:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"bQfrYBda4NiEKcuqMfcL6dkguByh8lwTAxV+2EkBPrM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ft70h06f10"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bQfrYBda4NiEKcuqMfcL6dkguByh8lwTAxV+2EkBPrM="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.ft70h06f10.css",
+      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9213"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bQfrYBda4NiEKcuqMfcL6dkguByh8lwTAxV+2EkBPrM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 04 Sep 2025 03:05:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3545,7 +3682,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1upyygzhnw"
+          "Value": "ft70h06f10"
         },
         {
           "Name": "label",
@@ -3553,13 +3690,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ScnClzGulmZxRGJ7w+YG2MQRtQow8DVJ5ZlJiMLJDGg="
+          "Value": "sha256-bQfrYBda4NiEKcuqMfcL6dkguByh8lwTAxV+2EkBPrM="
         }
       ]
     },
     {
-      "Route": "css/site.1upyygzhnw.css.gz",
-      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\610pfm39me-1upyygzhnw.gz",
+      "Route": "css/site.ft70h06f10.css.gz",
+      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\610pfm39me-ft70h06f10.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3568,7 +3705,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2165"
+          "Value": "2167"
         },
         {
           "Name": "Content-Type",
@@ -3576,11 +3713,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bdoglDsEHJs+OmvoVRYjNIIWJOor/8nvKl3JjkZvs0s=\""
+          "Value": "\"x2oNq9+pBDVPo2KEg8FPAwTBSpIHe1MkrtrmNMfLVnI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 04 Sep 2025 02:40:32 GMT"
+          "Value": "Thu, 04 Sep 2025 03:05:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3598,7 +3735,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1upyygzhnw"
+          "Value": "ft70h06f10"
         },
         {
           "Name": "label",
@@ -3606,144 +3743,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-bdoglDsEHJs+OmvoVRYjNIIWJOor/8nvKl3JjkZvs0s="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\610pfm39me-1upyygzhnw.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000461680517"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2165"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bdoglDsEHJs+OmvoVRYjNIIWJOor/8nvKl3JjkZvs0s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 04 Sep 2025 02:40:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"ScnClzGulmZxRGJ7w+YG2MQRtQow8DVJ5ZlJiMLJDGg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ScnClzGulmZxRGJ7w+YG2MQRtQow8DVJ5ZlJiMLJDGg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9203"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ScnClzGulmZxRGJ7w+YG2MQRtQow8DVJ5ZlJiMLJDGg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 04 Sep 2025 02:40:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ScnClzGulmZxRGJ7w+YG2MQRtQow8DVJ5ZlJiMLJDGg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\migue\\OneDrive\\Documentos\\github\\PortFolio\\obj\\Debug\\net9.0\\compressed\\610pfm39me-1upyygzhnw.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2165"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bdoglDsEHJs+OmvoVRYjNIIWJOor/8nvKl3JjkZvs0s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 04 Sep 2025 02:40:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-bdoglDsEHJs+OmvoVRYjNIIWJOor/8nvKl3JjkZvs0s="
+          "Value": "sha256-x2oNq9+pBDVPo2KEg8FPAwTBSpIHe1MkrtrmNMfLVnI="
         }
       ]
     },
