@@ -34,7 +34,7 @@ main
   justify-content: center;
   align-items: stretch;
   margin-top: 40px;
-  max-width: 100%;
+  width: 100%;
   gap: 25px;
 }
 
@@ -53,6 +53,7 @@ main
   justify-content: center;
   align-items: center;
   position: sticky;
+  width: 230px;
   top: 50px;
   margin-bottom: 0;
   padding: 10px;
@@ -70,6 +71,7 @@ main
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .imagen-avatar
@@ -183,7 +185,6 @@ hr{ color: white; }
 
 .main-content 
 {
-  min-width: 75%;
   width: 75%;
   margin: 0;
   border-radius: 20px;
