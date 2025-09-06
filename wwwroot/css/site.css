@@ -329,7 +329,7 @@ body {
 .chat-bot
 {
   position: fixed;
-  background-color: #212121;
+  /*background-color: #212121; */
   border-radius: 5px 5px 5px 5px;
   font-size: 100%;
   height: max-content;

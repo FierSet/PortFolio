@@ -66,7 +66,9 @@ INSERT INTO Projects VALUES
 ('Xor cypher', 'Made in C#, encript the information using the method XOR.', 'https://raw.githubusercontent.com/FierSet/encriptaci-n-xor/d7a71f567908c2fe6c33ae1926d0393c1571ad18/image.png', 'https://github.com/FierSet/encriptaci-n-xor'),
 ('Mobile App', 'Created for Android using Java, it allows for hiring professionals through the app, creating contracts and saving them in a database.', 'https://raw.githubusercontent.com/FierSet/Hire-Now/8eaab7381dc33f46af7224ad01510bf16421bf93/image.png', 'https://github.com/FierSet/Hire-Now'),
 ('E-commerce', 'E-commerce made in React.JS using a SQL Server as database.', 'https://raw.githubusercontent.com/FierSet/Inmobiliarias/fef7de2ea18c2367f949cd6737060a7aac6cae1e/image.png', 'https://github.com/FierSet/Inmobiliarias'),
-('Cesar cypher','Made in C#, encript the information using the method Cesar, also uses brute force to unencrypted.','https://raw.githubusercontent.com/FierSet/encriptacion_cesar/6bb407126c5f1c8e11c8fab6e890456c4073e995/image.png','https://github.com/FierSet/encriptacion_cesar');
+('Cesar cypher','Made in C#, encript the information using the method Cesar, also uses brute force to unencrypted.','https://raw.githubusercontent.com/FierSet/encriptacion_cesar/6bb407126c5f1c8e11c8fab6e890456c4073e995/image.png','https://github.com/FierSet/encriptacion_cesar'),
+('IOT Projects', 'several C/C++ IOT/Embedded projects', 'https://raw.githubusercontent.com/FierSet/IOT/refs/heads/main/image.png', 'https://github.com/FierSet/IOT'),
+('Massive create user in Windows Server/Azure using powershell', 'PowerShell Script, massive created or delete user', 'https://raw.githubusercontent.com/FierSet/Creacion_de_usuarios/refs/heads/main/image.png', 'https://github.com/FierSet/Creacion_de_usuarios');
 
 -- Insert initial users
 INSERT INTO Users VALUES
@@ -87,8 +89,9 @@ INSERT INTO Language VALUES
 ('English','B1');
 
 INSERT INTO Skill VALUES
-('C/C++', 70), ('C#', 80), ('JAVA', 70), ('VBA', 80), ('PHP', 70), ('SQL', 90), ('SQL/PL', 60), ('Python', 70), ('PowerShell', 60),
-('Full-Stack', 60), ('Git/GitHub', 70), ('Azure DevOps', 70), ('Linux', 80);
+('C/C++', 70), ('C#', 80), ('VBA', 80), ('.Net', 80), ("API", 70), ('JAVA', 70), ('PHP', 70), ('SQL', 80), ('SQL/PL', 60), ('Python', 70), ('PowerShell', 60), ("BackEnd", 70),
+('Full-Stack', 60), ('Git/GitHub', 70), ('Azure DevOps', 70), ('Linux', 80),
+('IOT/Embedded', 60);
 
 INSERT INTO Xp VALUES
 ('TATA Consultancy Services',

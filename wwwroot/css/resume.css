@@ -26,6 +26,15 @@
 
 .title-work-time{ width: 100%; }
 
+.Simple-resume
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
 .work-time-list
 {
     list-style-type: none;
