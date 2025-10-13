@@ -61,6 +61,7 @@ CREATE TABLE Projects(
 
 -- Insert initial projects
 INSERT INTO Projects VALUES
+('Link Shortener', 'A simple link shortener made in ASP.NET MVC with a SQL database.', 'https://raw.githubusercontent.com/FierSet/linkshorter/refs/heads/main/IMG-GUIDE/image.png', 'https://github.com/FierSet/linkshorter'),
 ('Inventory Control','Developed an internal inventory management system for TATA company using VBA Excel and SQL Server, improving stock tracking efficiency by 30%','https://i.postimg.cc/fb3rkzkw/image.png','https://github.com/FierSet'),
 ('Curriculum Vitae', 'This CV has been built in three versions, showcasing PHP, React.js, and ASP.NET MVC.','https://raw.githubusercontent.com/FierSet/Curriculum-vitae-javascript/a523207b808a81a73b8405fba02c155cbfa438ff/image.png','http://miguelaoz.atwebpages.com/CV-List.php'),
 ('Xor cypher', 'Made in C#, encript the information using the method XOR.', 'https://raw.githubusercontent.com/FierSet/encriptaci-n-xor/d7a71f567908c2fe6c33ae1926d0393c1571ad18/image.png', 'https://github.com/FierSet/encriptaci-n-xor'),
@@ -89,7 +90,7 @@ INSERT INTO Language VALUES
 ('English','B1');
 
 INSERT INTO Skill VALUES
-('C/C++', 70), ('C#', 80), ('VBA', 80), ('.Net', 80), ("API", 70), ('JAVA', 70), ('PHP', 70), ('SQL', 80), ('SQL/PL', 60), ('Python', 70), ('PowerShell', 60), ("BackEnd", 70),
+('C/C++', 70), ('C#', 80), ('VBA', 80), ('.Net', 80), ('API', 70), ('JAVA', 70), ('PHP', 70), ('SQL', 80), ('SQL/PL', 60), ('Python', 70), ('PowerShell', 60), ('BackEnd', 70),
 ('Full-Stack', 60), ('Git/GitHub', 70), ('Azure DevOps', 70), ('Linux', 80),
 ('IOT/Embedded', 60);
 
