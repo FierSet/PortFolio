@@ -30,11 +30,11 @@ steps:
     publishWebProjects: true
 
 - task: AzureRmWebAppDeployment@5
-  displayName: 'deployment'
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'Azure subscription 1(821560ed-3569-4be7-9999-14254a82852a)'
+    azureSubscription: 'Azure subscription 1(2)(821560ed-3569-4be7-9999-14254a82852a)'
     appType: 'webAppLinux'
     WebAppName: 'Portfolio-Miguelortega'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    RuntimeStack: 'DOTNETCORE|9.0'
     DeploymentTypeLinux: 'oneDeploy'
