@@ -12,13 +12,17 @@ public class ChatController : ControllerBase
     private readonly string fileid;
     private readonly List<string> _apikeys = [];
     private readonly int link = 0, subkey = 1, key = 2;
+    private readonly GptConfig GptConfig = new GptConfig();
 
     public ChatController(IConfiguration config)
     {
-        fileid = "file-AGAuHkyoHmGsRTeZfqHvKJ"; //pdf //"file-JhGiDMbGZekZtBu7T3rT84"; //txt
-        _apikeys.Add("https://api.openai.com/v1/responses");
-        _apikeys.Add("Bearer");
-        _apikeys.Add(Environment.GetEnvironmentVariable("OPENAI_API_KEY") ?? "");
+        var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build();
+        GptConfig = builder.GetSection("Env:GPT").Get<GptConfig>() ?? new GptConfig();
+
+        fileid = GptConfig.FileId ?? ""; //pdf //"file-JhGiDMbGZekZtBu7T3rT84"; //txt
+        _apikeys.Add(GptConfig.Url ?? "");
+        _apikeys.Add(GptConfig.AuthType ?? "");
+        _apikeys.Add(Environment.GetEnvironmentVariable(GptConfig.Key ?? "") ?? "");
     }
 
     [HttpPost("ask")]
@@ -31,7 +35,7 @@ public class ChatController : ControllerBase
 
         var requestBody = new
         {
-            model = "gpt-5",
+            model = GptConfig.Model,
             input = new[]
             {
                 new
@@ -42,7 +46,7 @@ public class ChatController : ControllerBase
                         new
                         {
                             type = "input_text",
-                            text = "You are an assistant that analyzes and explains the information in the provided portfolio file in a clear and professional way."
+                            text = "You are an assistant that analyzes and explains the information in the provided portfolio file, be clear and professional."
                         }
                     }
                 },
@@ -105,4 +109,13 @@ public class ChatController : ControllerBase
 public class UserMessage
 {
     public string? Message { get; set; }
+}
+
+public class GptConfig
+{
+    public string? FileId { get; set; }
+    public string? Url { get; set; }
+    public string? AuthType { get; set; }
+    public string? Key { get; set; }
+    public string? Model { get; set; }
 }

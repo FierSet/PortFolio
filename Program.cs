@@ -1,3 +1,6 @@
+using Microsoft.Extensions.FileProviders;
+using System.IO;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -18,7 +21,19 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
 app.UseHttpsRedirection();
+
+// Serve default static files from wwwroot
+app.UseStaticFiles();
+
+// Also expose the project's `sound` directory at the `/sound` URL
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "sound")),
+    RequestPath = "/sound"
+});
+
 app.UseRouting();
 
 app.UseAuthorization();

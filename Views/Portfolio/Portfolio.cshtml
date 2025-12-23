@@ -88,21 +88,26 @@
         </div>
     </div>
 
-    <div id="chat-zone" class="chat-bot">
+    <div id="chat-zone" class="chat-bot hide">
 
         <div class="title-chat" onclick="hidechat()">
             <button id="show-buton" class="show-buton"> <i class="hgi hgi-stroke hgi-arrow-down-01"></i> </button>
             <div class="title-bot">Assistant (ChatBot GPT-5)</div>
         </div>
-        <partial name="./chatbot/chatbot"/>
+        
 
         <script>
+            const soundin = new Audio('/sound/new-notification-1.mp3');
+            const soundout = new Audio('/sound/message-send.mp3');
+
+            hidechat();
 
             function hidechat()
             {
                 const chatsite = document.getElementById("chat-zone");
                 const buttonchat = document.getElementById("show-buton");
                 const icon = buttonchat.querySelector("i");
+
 
                 if(chatsite.classList.contains("hide"))
                 {
@@ -114,7 +119,22 @@
                     .then(response => response.text())
                     .then(html => {
                         document.getElementById("chat-zone").innerHTML += html;
+
+                        const chat = document.getElementById("chat");
+                        chat.innerHTML += 
+                        `<div class="item">
+                            <div class="icon">
+                                <i class="hgi hgi-stroke hgi-chat-gpt"></i>
+                            </div>
+                            <div class="msg">
+                                Hi! I'm your AI assistant. How can I help you today?
+                            </div>
+                        </div>`;
+                    
+                        soundin.play();    
+                        
                     }).catch(err => console.error("Error loading partial:", err));
+
                 }
                 else
                 {
@@ -143,6 +163,7 @@
                 </div>
                 <br/>`;
                 input.value = "";
+                soundout.play();
 
                 // Add "typing" animation placeholder
                 const typingMsg = document.createElement("div");
@@ -177,6 +198,7 @@
                         ${data.response}
                     </div>
                 </div>`;
+                soundin.play();
 
                 chat.scrollTo({
                 top: chat.scrollHeight,
