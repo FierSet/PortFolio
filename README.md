@@ -75,6 +75,3 @@ PortFolio/
 
 Feel free to reach out if you have any questions or opportunities!
 
----
-
-Made with ❤️ by Miguel Ortega
