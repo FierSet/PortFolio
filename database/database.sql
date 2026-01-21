@@ -61,6 +61,7 @@ CREATE TABLE Projects(
 
 -- Insert initial projects
 INSERT INTO Projects VALUES
+('windows-massive-download-install-programs', 'PowerShell script to download and install programs in Windows machines, usefull to massive machine or VM.', 'https://github.com/FierSet/windows-massive-download-install-programs', 'https://raw.githubusercontent.com/FierSet/windows-massive-download-install-programs/refs/heads/main/diagram.png'),
 ('Inventory Control','Developed an internal inventory management system for TATA company using VBA Excel and SQL Server, improving stock tracking efficiency by 30%, (now Open source)','https://raw.githubusercontent.com/FierSet/device-manager/refs/heads/main/screenshot/CAPTURE.png','https://github.com/FierSet/device-manager'),
 ('Link Shortener', 'A simple link shortener made in ASP.NET MVC with a SQL database.', 'https://raw.githubusercontent.com/FierSet/linkshorter/refs/heads/main/IMG-GUIDE/image.png', 'https://github.com/FierSet/linkshorter'),
 ('Curriculum Vitae', 'This CV has been built in three versions, showcasing PHP, React.js, and ASP.NET MVC.','https://raw.githubusercontent.com/FierSet/Curriculum-vitae-javascript/a523207b808a81a73b8405fba02c155cbfa438ff/image.png','http://miguelaoz.atwebpages.com/CV-List.php'),
