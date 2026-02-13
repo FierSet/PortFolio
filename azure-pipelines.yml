@@ -36,5 +36,5 @@ steps:
     appType: 'webAppLinux'
     WebAppName: 'Portfolio-Miguelortega'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    RuntimeStack: 'DOTNETCORE|9.0'
+    RuntimeStack: 'DOTNETCORE|10.0'
     DeploymentTypeLinux: 'oneDeploy'
